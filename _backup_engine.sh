@@ -6,6 +6,12 @@
 info() { printf "\n%s %s\n\n" "$( date )" "$*" >&2; }
 trap 'echo $( date ) Backup interrupted >&2; exit 2' INT TERM
 
+if [ ! -d "$BORG_REPO" ]; then
+    echo "There is no repository at: $BORG_REPO, initializing now";
+    borg init --encryption=repokey $BORG_REPO;
+fi
+
+
 info "Starting backup"
 
 # Backup the most important directories into an archive named after
