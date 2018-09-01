@@ -13,7 +13,7 @@
 export BORG_REPO=$BORG_DESKTOP
 # Setting this, so the repo does not need to be given on the commandline:
 echo "Running backup procedure";
-started=$(date '+%d/%m %H:%M)'
+started=$(date '+%d/%m %H:%M');
 . ./_backup_engine.sh;
 ended=$(date '+%d/%m %H:%M')
 echo "System backup: $started - $ended" > status
