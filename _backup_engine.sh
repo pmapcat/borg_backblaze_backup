@@ -32,8 +32,11 @@ borg create                          \
     --exclude '/home/mik/Загрузки/*' \
     --exclude '/home/mik/vm/*'       \
     --exclude '/home/mik/otherfs/*'  \
-    --exclude '/home/mik/VirtualBox\ VMs/*' \
+    --exclude '/home/mik/VirtualBox VMs/*' \
     --exclude '/home/mik/.wine/*'    \
+    --exclude '/home/mik/.mozilla/*' \
+    --exclude '/home/mik/.tldr/*'    \
+    --exclude '/home/mik/.config/*'  \
     ::'{hostname}-{now}'             \
     /home/mik                        \
     

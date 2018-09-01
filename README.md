@@ -2,7 +2,9 @@
 
 ```shell
 borg init --encryption=repokey /home/mik/vm/2018_desktop_borg;
-
 ```
 
+
+## Wasabi API keys. 
+Are on my gmail account.
 
