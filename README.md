@@ -1,10 +1,6 @@
-# Creating repository (might, as well, do it by hand. tbh)
+# This is an implementation of my backup strategy
 
-```shell
-borg init --encryption=repokey /home/mik/vm/2018_desktop_borg;
-```
+It contains of the following three 
 
 
-## Wasabi API keys. 
-Are on my gmail account.
 
