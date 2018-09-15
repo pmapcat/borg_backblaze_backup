@@ -1,0 +1,26 @@
+/proc/*
+/boot/*
+/cdrom/*
+/dev/*
+/media/*
+/mnt/*
+/run/*
+/selinux/*
+/tmp/*
+/var/log/*
+/sys/*
+/var/tmp/*
+/var/lib/docker/*
+/var/cache/*
+/home/*/.cache/*
+/home/mik/Downloads/*
+/home/mik/Загрузки/*
+/home/mik/vm/*
+/home/mik/otherfs/*
+/home/mik/otherfs/*
+/home/mik/VirtualBox VMs/*
+/home/mik/.thumbnails/*
+/home/mik/.wine/*
+/home/mik/.mozilla/*
+/home/mik/.tldr/*
+/home/mik/.config/*

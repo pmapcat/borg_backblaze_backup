@@ -25,20 +25,9 @@ borg create                          \
     --show-rc                        \
     --compression lz4                \
     --exclude-caches                 \
-    --exclude '/home/*/.cache/*'     \
-    --exclude '/var/cache/*'         \
-    --exclude '/var/tmp/*'           \
-    --exclude '/home/mik/Downloads/*'\
-    --exclude '/home/mik/Загрузки/*' \
-    --exclude '/home/mik/vm/*'       \
-    --exclude '/home/mik/otherfs/*'  \
-    --exclude '/home/mik/VirtualBox VMs/*' \
-    --exclude '/home/mik/.wine/*'    \
-    --exclude '/home/mik/.mozilla/*' \
-    --exclude '/home/mik/.tldr/*'    \
-    --exclude '/home/mik/.config/*'  \
+    --exclude-from $BORG_EXCLUDEFILE \
     ::'{hostname}-{now}'             \
-    /home/mik                        \
+    $BACKUP_DIR                      \
     
 backup_exit=$?
 
