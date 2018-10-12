@@ -2,13 +2,15 @@
 
 With [Borg](https://borgbackup.readthedocs.io/en/stable/) and [Rclone](https://rclone.org/).
 
+## Features
+
 * Data encryption
 * Data deduplication
 * Incremental backup
 * Prunning older versions
 * External drive backup
 * Cloud backup
-* With 3-2-1 system
+* 3-2-1
 
 # Getting started
 
@@ -25,29 +27,6 @@ Copy configuration:
 
 `mv _config_sample.sh _config.sh`
 
-### Ignore files and directories
-
-Set up which folders to ignore in backup `_ignore`
-
-For example:
-```
-/proc/*
-/boot/*
-/cdrom/*
-/dev/*
-/media/*
-/mnt/*
-/run/*
-/selinux/*
-/tmp/*
-/var/log/*
-/sys/*
-/var/*
-/var/tmp/*
-/var/lib/docker/*
-/var/cache/*
-/lib/*
-```
 
 ### Initialize BORG archive
 
@@ -140,6 +119,31 @@ I.e:
 to_internal_folder.sh && to_cloud_backblaze.sh
 ```
 
+### Setting up Ignore folders for backup
+
+Set up which folders to ignore in backup `_ignore`
+
+For example:
+```
+/proc/*
+/boot/*
+/cdrom/*
+/dev/*
+/media/*
+/mnt/*
+/run/*
+/selinux/*
+/tmp/*
+/var/log/*
+/sys/*
+/var/*
+/var/tmp/*
+/var/lib/docker/*
+/var/cache/*
+/lib/*
+```
+
+
 ## Caveats
 
 In case you are planning to backup the entire drive, you will need to do everything 
@@ -147,4 +151,3 @@ by the **root** user, including setting up *RClone* endpoints, and *Borg reposit
 
 ## License 
 The MIT license
-
