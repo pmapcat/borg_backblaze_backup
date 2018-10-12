@@ -6,9 +6,10 @@
 # @ All rights reserved.                                                               @
 # @@@@@@ At 2018-01-09 23:40<mklimoff222@gmail.com> @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
+cd $(dirname "$0");
 
 ## import data for this backup
-. ./_borg_credentials.sh;
+. ./_config.sh;
 
 export BORG_REPO=$BORG_DESKTOP
 # Setting this, so the repo does not need to be given on the commandline:

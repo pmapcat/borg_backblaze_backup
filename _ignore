@@ -9,10 +9,13 @@
 /tmp/*
 /var/log/*
 /sys/*
+/var/*
 /var/tmp/*
 /var/lib/docker/*
 /var/cache/*
+/lib/*
 /home/*/.cache/*
+/home/mik/.cargo/*
 /home/mik/Downloads/*
 /home/mik/Загрузки/*
 /home/mik/vm/*
@@ -24,3 +27,5 @@
 /home/mik/.mozilla/*
 /home/mik/.tldr/*
 /home/mik/.config/*
+/home/mik/Downloads/*
+/home/mik/.Genymobile/*
